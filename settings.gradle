@@ -1,0 +1,2 @@
+rootProject.name = "My TV"
+include ':app'

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#38CAD6"
+    android:orientation="vertical"
+    tools:context=".SignupPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/Name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/personblue"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter your full name"
+                    android:inputType="textPersonName"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/Phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter your phone number"
+                    android:inputType="phone"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/Email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter your email id"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/Address_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter your address"
+                    android:inputType="textPostalAddress"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/signup_button"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/round_border"
+                    android:fontFamily="sans-serif-thin"
+                    android:text="Signup"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Already have an account?"
+                    android:textColor="#3E3D40"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Log in"
+                    android:textColor="#38CAD6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

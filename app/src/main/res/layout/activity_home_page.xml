@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerhome">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navhome"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#38CAD6"
+        android:minHeight="55dp"
+        app:titleTextColor="#FFFFFF"
+        app:navigationIcon="@drawable/ic_baseline_menu_24" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp">
+        <com.smarteist.autoimageslider.SliderView
+            android:layout_width="match_parent"
+            android:id="@+id/sliderview"
+            android:layout_height="match_parent"
+            app:sliderScrollTimeInSec="2"
+            app:sliderAnimationDuration="750"
+            app:sliderAutoCycleDirection="left"
+            app:sliderIndicatorRadius="3dp"
+            app:sliderIndicatorSelectedColor="#38CAD6"
+            app:sliderIndicatorUnselectedColor="#819EA1"
+            app:sliderStartAutoCycle="true"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            app:cardBackgroundColor="#FAF8F8"
+            app:strokeColor="#FF38CAD6"
+            app:strokeWidth="3dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:id="@+id/kannada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/kannadalast" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF38CAD6"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="Kannada"
+                    android:textColor="#151414"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="#FF38CAD6"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:id="@+id/hindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/hindi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF38CAD6"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="Hindi"
+                    android:textColor="#151414"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="#FF38CAD6"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:id="@+id/kids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/kidss" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF38CAD6"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="Kids"
+                    android:textColor="#151414"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="#FF38CAD6"
+            app:strokeWidth="3dp">
+
+            <LinearLayout
+                android:id="@+id/sports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/sports" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF38CAD6"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="Sports"
+                    android:textColor="#151414"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

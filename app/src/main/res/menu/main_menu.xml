@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/itemcomplaints"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="Complaints" />
+<!--    <item-->
+<!--        android:id="@+id/itempayment"-->
+<!--        android:icon="@drawable/ic_baseline_monetization_on_24"-->
+<!--        android:title="Payments" />-->
+    <item
+        android:id="@+id/itemprofile"
+        android:icon="@drawable/ic_baseline_person"
+        android:title="Profile" />
+    <item
+        android:id="@+id/itemcart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart" />
+    <item
+        android:id="@+id/itemcontact"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:title="Contact us" />
+    <item
+        android:id="@+id/itemlogout"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Log out" />
+
+
+
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#38CAD6"
+    tools:context=".Complaint">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Post your Complaint"
+                android:textColor="#131212"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/comName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_border"
+                android:drawableLeft="@drawable/personblue"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                android:padding="7dp"
+                android:textColor="#736F6F"
+                android:textColorHint="#888484"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/comMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_border"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Mail id"
+                android:inputType="textEmailAddress"
+                android:padding="7dp"
+                android:textColor="#736F6F"
+                android:textColorHint="#888484"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/comPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_border"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:padding="7dp"
+                android:textColor="#736F6F"
+                android:textColorHint="#888484"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#D8CFCF"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:gravity="start|top"
+                android:hint="Your Complaint"
+                android:inputType="textMultiLine"
+                android:textColor="#424040"
+                android:textColorHint="#9F9B9B"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/submitComplaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@drawable/round_border"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
